@@ -6,7 +6,13 @@ All Films
 
 @stop
 
+
+
 @section('body')
+<br>
+<br>
+
+<a href="film/create">Create Film</a>
 
   @foreach($films as $film)
     <h1>Film ID:{{$film->id}}</h1>

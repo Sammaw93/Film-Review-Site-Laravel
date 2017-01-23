@@ -65,7 +65,39 @@ public function show($id)
   return view('films.show')->with('film', $film);
 }
 
+public function edit($id)
 
+{
+
+  $film = Film::find($id);
+
+
+
+  return view('films.edit')->with('film', $film);
+
+
+}
+
+// update function
+
+public function update (Request $request, $id)
+
+{
+
+  $film = Film::find($id);
+
+  $film->filmtitle = $request->filmtitle;
+  $film->filmdescription = $request->filmdescription;
+  $film->filmdirector = $request->filmdirector;
+  $film->filmrating = $request->filmrating;
+  $film->save();
+
+  return redirect()->route('film.index');
+
+
+}
+
+// destroy function for removing film details
 
 public function destroy($id)
 
