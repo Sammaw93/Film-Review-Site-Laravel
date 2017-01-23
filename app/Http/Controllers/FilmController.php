@@ -39,6 +39,8 @@ public function store(Request $request)
 
 {
 
+  
+
   $film = new Film;
   $film->filmtitle = $request->filmtitle;
   $film->filmdescription = $request->filmdescription;
@@ -46,11 +48,41 @@ public function store(Request $request)
   $film->filmrating = $request->filmrating;
   $film->save();
 
-  return "Successfully added!";
+
+   return redirect()->action('FilmController@index');
 
 }
 
+
+public function show($id)
+
+// used to show the filmID and returns it within the view.
+
+{
+
+  $film = Film::find($id);
+
+  return view('films.show')->with('film', $film);
 }
+
+
+
+public function destroy($id)
+
+{
+
+  Film::destroy($id);
+
+  return redirect()->route('film.index');
+  }
+
+  
+
+
+}
+
+
+
 
 
 

@@ -83,7 +83,7 @@
                     Main Film Page!
 
 
-                    @extends('layouts.layout')
+                   
                 </div>
 
 

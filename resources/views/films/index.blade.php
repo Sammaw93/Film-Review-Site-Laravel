@@ -9,7 +9,7 @@ All Films
 @section('body')
 
   @foreach($films as $film)
-    <h1>Film ID:{{$film->filmid}}</h1>
+    <h1>Film ID:{{$film->id}}</h1>
     <h1>film Title:{{$film->filmtitle}}</h1>
     <h1>Film Description:{{$film->filmdescription}}</h1>
     <h1>film Director:{{$film->filmdirector}}</h1>
