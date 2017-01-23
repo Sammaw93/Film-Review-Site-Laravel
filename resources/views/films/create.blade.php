@@ -5,23 +5,32 @@ Create new Film
 
 @section('body')
 
+<br>
 
+<br>
 
 {!!Form::open(['route' => 'film.store'])!!}
 
-{!!Form::label('filmtitle', 'FilmTitle')!!}
+{!!Form::label('filmtitle', 'Film Title:')!!}
 {!!Form::text('filmtitle')!!}
+<br>
+<br>
 
-
-{!!Form::label('filmdescription', 'FilmDescription')!!}
+{!!Form::label('filmdescription', 'Film Description:')!!}
 {!!Form::text('filmdescription')!!}
+<br>
+<br>
 
-{!!Form::label('filmdirector', 'FilmDirector')!!}
+{!!Form::label('filmdirector', 'Film Director:')!!}
 {!!Form::text('filmdirector')!!}
 
-{!!Form::label('filmrating', 'FilmRating')!!}
-{!!Form::text('filmrating')!!}
+<br>
+<br>
 
+{!!Form::label('filmrating', 'Film Rating:')!!}
+{!!Form::text('filmrating')!!}
+<br>
+<br>
 
 
 

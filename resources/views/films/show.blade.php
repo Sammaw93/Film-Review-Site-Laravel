@@ -6,13 +6,7 @@
 
 @section('body')
 
-{!!Form::open ([
 
-	'method' => 'delete',
-
-	'route' => ['film.destroy', $film->id]
-
-])!!}
 
 <h1>{{$film->filmtitle}}</h1>
 <h2>{{$film->filmdescription}}</h2>
@@ -22,8 +16,7 @@
 
 <a href="#">Edit</a>  
 
-{!!Form::submit('Delete')!!}
-{!!Form::close()!!}
+
 
 @stop
 
