@@ -65,6 +65,8 @@ public function show($id)
   return view('films.show')->with('film', $film);
 }
 
+// edit function for the film details.
+
 public function edit($id)
 
 {
@@ -78,7 +80,7 @@ public function edit($id)
 
 }
 
-// update function
+// update function which updates the film fields and redirects to the views pages.
 
 public function update (Request $request, $id)
 
@@ -97,7 +99,7 @@ public function update (Request $request, $id)
 
 }
 
-// destroy function for removing film details
+// destroy function for removing film details.
 
 public function destroy($id)
 

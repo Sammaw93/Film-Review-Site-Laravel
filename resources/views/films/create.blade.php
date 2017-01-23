@@ -3,6 +3,7 @@
 Create new Film
 @stop
 
+<!--This is a basic HTML page which displays the form where you can create a new film which is then added to the films page and database -->
 @section('body')
 
 <br>
