@@ -6,6 +6,8 @@
 
 @section('body')
 
+<!-- This page is used to display the show -->
+
 {!!Form::open ([
 
 	'method' => 'delete',
@@ -20,7 +22,7 @@
 <h4>{{$film->filmrating}}</h4>
 
 
-<a href="#">Edit</a>  
+<a href="{{route('film.edit', $film->id)}}">Edit</a>  
 
 {!!Form::submit('Delete')!!}
 

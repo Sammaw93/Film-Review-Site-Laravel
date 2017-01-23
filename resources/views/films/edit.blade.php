@@ -4,7 +4,7 @@
 Edit {{$film->filmtitle}}
 @stop
 
-
+<!-- This file is used to edit the current film details stored on the website and database --> 
 @section('body')
 
 {!!Form::model($film, [
